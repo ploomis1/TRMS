@@ -2,20 +2,29 @@
 The Tuition Reimbursement System, TRMS, allows users to submit reimbursements for courses and training. The submitted reimbursement must be approved by that employee's supervisor, department head, and benefits coordinator. The benefits coordinator then reviews the grade received before finalizing the reimbursement.
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Javalin
+* Java
+* AWS S3
+* Maven
+* Git
+* Amazon Keyspaces
+* Cassandra
 
 ## Features
 
 List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* CRUD operations for users
+* CRUD operations for reimbursement forms
+* Ability to uload documents and files to Amazon S3
+* Ability for specific user to view form
+* Ability for specific user to approve or deny form
+* Ability for Benco to change reimbursment amount and send notification to form owner
+* Ability to view presentations and files uploaded to S3
+* Able to Run On EC2 instance
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Give access for S3 to EC2 instance
+* Create Fron-end
 
 ## Getting Started
    
@@ -32,10 +41,3 @@ To-do list:
 
 > Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
 
-## Contributors
-
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
-
-## License
-
-This project uses the following license: [<license_name>](<link>).
