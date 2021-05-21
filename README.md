@@ -9,35 +9,29 @@ The Tuition Reimbursement System, TRMS, allows users to submit reimbursements fo
 * Git
 * Amazon Keyspaces
 * Cassandra
+Mockito
+JUnit
 
 ## Features
 
 List of features ready and TODOs for future development
-* CRUD operations for users
-* CRUD operations for reimbursement forms
+
+Comments and notes can be added to a request
 * Ability to uload documents and files to Amazon S3
-* Ability for specific user to view form
-* Ability for specific user to approve or deny form
-* Ability for Benco to change reimbursment amount and send notification to form owner
 * Ability to view presentations and files uploaded to S3
-* Able to Run On EC2 instance
+Employees of all levels can login and out
+Employees can submit a request for reimbursement with funds auto-calculated from data provided
+Submissions must follow certain business rules or be automatically rejected
+Hierarchy for aprroval
+Certain approval steps can be skipped by submitting course documents
+Certain approval steps will be skipped after a long enough time without approval
+Submission will be marked urgent within 1 week of course start date
+Only the appropiate person at each stage can view the request and files submitted
 
 To-do list:
 * Give access for S3 to EC2 instance
 * Create Fron-end
 
-## Getting Started
-   
-(include git clone command)
-(include all environment setup steps)
-
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
-
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
+Clone Repository, setup Amazon Keyspaces, setup Amazon truststore, setup enviornment vairables in run configurations, use postman for api requests
