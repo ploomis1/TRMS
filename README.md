@@ -3,41 +3,35 @@ The Tuition Reimbursement System, TRMS, allows users to submit reimbursements fo
 ## Technologies Used
 
 * Javalin
-* Java
+* Java 8
 * AWS S3
+* AWS EC2
+* Aws Keyspaces
 * Maven
 * Git
-* Amazon Keyspaces
-* Cassandra
+* Cassandra NoSQL
+* Mockito
+* JUnit
 
 ## Features
 
-List of features ready and TODOs for future development
-* CRUD operations for users
-* CRUD operations for reimbursement forms
-* Ability to uload documents and files to Amazon S3
-* Ability for specific user to view form
-* Ability for specific user to approve or deny form
-* Ability for Benco to change reimbursment amount and send notification to form owner
-* Ability to view presentations and files uploaded to S3
-* Able to Run On EC2 instance
-
-To-do list:
-* Give access for S3 to EC2 instance
-* Create Fron-end
-
-## Getting Started
-   
-(include git clone command)
-(include all environment setup steps)
-
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
+* Ability to uload documents, prsesntations, grading formats, emails, and files
+* All Employees can login and out
+* All Employess can submit a reimbursement request
+* Funds are calculated automatically based on cost and company rules
+* Request must follow business rules or be denied automatically
+* Approval process follows hierarchy
+* Approval steps can be skipped if approval email is provided
+* Approval steps not submitted in timely manner will be auto-approved
+* Requests will be marked urgent when within 1 week of course start date
+* Only appropriate employees can view, accept, or reject requests
+* Only appropriate employees can view files uploaded for request
+* Comments and notes can be added to a request
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
+Clone Repository. 
+Setup Amazon Keyspaces and configuration file.
+Setup Amazon truststore in recources folder.
+Create Run Configurations.
+Use an application such as Postman to send REST requests.
