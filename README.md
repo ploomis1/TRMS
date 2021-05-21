@@ -3,34 +3,30 @@ The Tuition Reimbursement System, TRMS, allows users to submit reimbursements fo
 ## Technologies Used
 
 * Javalin
-* Java
+* Java 8
 * AWS S3
+* AWS EC2
+* Aws Keyspaces
 * Maven
 * Git
-* Amazon Keyspaces
-* Cassandra
-Mockito
-JUnit
+* Cassandra NoSQL
+* Mockito
+* JUnit
 
 ## Features
 
-List of features ready and TODOs for future development
-
-Comments and notes can be added to a request
-* Ability to uload documents and files to Amazon S3
-* Ability to view presentations and files uploaded to S3
-Employees of all levels can login and out
-Employees can submit a request for reimbursement with funds auto-calculated from data provided
-Submissions must follow certain business rules or be automatically rejected
-Hierarchy for aprroval
-Certain approval steps can be skipped by submitting course documents
-Certain approval steps will be skipped after a long enough time without approval
-Submission will be marked urgent within 1 week of course start date
-Only the appropiate person at each stage can view the request and files submitted
-
-To-do list:
-* Give access for S3 to EC2 instance
-* Create Fron-end
+* Ability to uload documents, prsesntations, grading formats, emails, and files
+* All Employees can login and out
+* All Employess can submit a reimbursement request
+* Funds are calculated automatically based on cost and company rules
+* Request must follow business rules or be denied automatically
+* Approval process follows hierarchy
+* Approval steps can be skipped if approval email is provided
+* Approval steps not submitted in timely manner will be auto-approved
+* Requests will be marked urgent when within 1 week of course start date
+* Only appropriate employees can view, accept, or reject requests
+* Only appropriate employees can view files uploaded for request
+* Comments and notes can be added to a request
 
 ## Usage
 
