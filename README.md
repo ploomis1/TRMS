@@ -30,4 +30,8 @@ The Tuition Reimbursement System, TRMS, allows users to submit reimbursements fo
 
 ## Usage
 
-Clone Repository, setup Amazon Keyspaces, setup Amazon truststore, setup enviornment vairables in run configurations, use postman for api requests
+Clone Repository. 
+Setup Amazon Keyspaces and configuration file.
+Setup Amazon truststore in recources folder.
+Create Run Configurations.
+Use an application such as Postman to send REST requests.
